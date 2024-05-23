@@ -129,6 +129,11 @@ a {
 
 /*  HEADER  */
 
+.header__contianer {
+  padding: 96px 0;
+  margin: 0 64px;
+}
+
 h1 {
   color: #2d2e30;
   font-size: 64px;
@@ -188,8 +193,7 @@ h1 {
 }
 
 .header__sections {
-  max-width: 1200px;
-
+  max-width: 1600px;
   display: flex;
   align-items: center;
 }
@@ -201,15 +205,21 @@ h1 {
 }
 
 .header__img--wrapper {
-  width: 40%;
+  width: 100%;
+  max-width: 1200px;
   margin-top: 56px;
 }
 
-.header__img {
-  width: 40%
+.head__img {
+  margin-left: 24px;
 }
 
 /*features*/
+
+.features__container {
+  padding: 96px 0;
+  margin: 0 64px;
+}
 
 .title {
   color: #6415FF;
@@ -227,33 +237,154 @@ h1 {
 /* Services */
 
 .services__row {
-display: flex;
+display: grid;
+grid-template-columns: repeat(3,2fr);
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 margin: 0 auto;
 }
 
-.service {
+.service__wrapper {
 display: flex;
-justify-content: center;
-flex-direction: column;
-width: 33%;
 align-items: center;
-
+padding: 24px 24px;
 }
 
 .subtitle {
   font-size: 38px;
   color: #2d2e30;
+  margin-left: 28px;
 }
 
+.description {
+  margin-left: 28px;
+}
 
+.service__img {
+  width: 56px;
+  padding: 8px;
+}
 
 .service__img--wrapper {
   border: 1px solid #747880;
-  border-radius: 48px;
+  border-radius: 100%;
+  padding: 12px 12px;
+}
+
+
+/*QUALITY WORK*/
+
+
+
+.work__section {
+  width: 50%;
+}
+
+.work__img--wrapper {
+  width: 50%;
+  max-width: 120px;
+  margin-top: 56px;
+  padding: 0 48px;
+}
+
+/*STEPS TO START*/
+
+.steps__img--wrapper {
+  width: 50%;
+}
+
+.steps__section {
+  display: flex;
+}
+
+.steps__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+
+.info__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.list__items {
+  font-size: 32px;
+  font-weight: bold;
+  color: #414346;
+  margin-bottom: 12px;
+}
+
+.list__number {
   font-size: 48px;
+  color: #afb3bb;
+  font-weight: bold;
+}
+
+
+.list {
+  display: flex;
+  margin-right: 24px;
+  padding-top: 12px;
+}
+
+.list__description {
+  padding: 0 24px;
+  line-height: 1.5;
+}
+
+.list__para {
+  color: #71757a;
+  font-weight: bold;
+}
+
+.info__subtitle {
+  font-size: 68px;
+}
+
+
+/*VALUES*/
+
+.values {
+  display: flex;
+  margin-right: 24px;
+  padding-top: 12px;
+  width: 50%;
+}
+
+.values__container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 42px;
+}
+
+.values__description {
+  padding: 0 24px;
+  line-height: 1.5;
+}
+
+.values__para {
+  color: #71757a;
+  font-weight: bold;
+}
+
+.values__items {
+  list-style-type: none;
+  font-size: 32px;
+  font-weight: bold;
+  color: #414346;
+  margin-bottom: 12px;
+}
+
+.money__wrapper {
+  border: solid #9AE6B4 2px;
 
 }
 
+.suitcase__wrapper {
+  border: solid #FEB2B2 2px;
+
+}
