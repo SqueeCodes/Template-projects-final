@@ -432,6 +432,8 @@ padding: 24px 24px;
   flex-direction: column;
   line-height: 2;
   padding: 24px 0;
+  border-left: solid 3px #b8babe;
+  border-right: solid 3px #b8babe;
   
 }
 
@@ -440,13 +442,14 @@ padding: 24px 24px;
   flex-direction: column;
   line-height: 3;
   border-top: solid #b8babe 4px;
-  border-bottom: solid #b8babe 4px;
+  border-left: solid #b8babe 4px;
+  border-right: solid #b8babe 4px;
   padding: 24px;
 }
 
 .pricing__plans__section-3 {
   padding: 64px 0;
-
+  border: solid #b8babe 3px;
 }
 
 .personal__subtitle {
@@ -509,8 +512,10 @@ padding: 24px 24px;
   border-top: solid 16px;
   border-image: linear-gradient(to left, #51d4a9, #e7eee7);
   border-image-slice: 1;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
   background-clip:padding-box;
-  border-left: solid 2px #747880,;
+
 }
 
 .business--plan__container {
