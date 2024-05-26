@@ -1,5 +1,5 @@
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'inter', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -16,6 +16,10 @@ html {
   max-width: 1600px;
   margin: 0 auto;
   padding-top: 28px;
+}
+
+button {
+  border: none;
 }
 
 p {
@@ -410,36 +414,38 @@ padding: 24px 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-   
 }
 
 .pricing__plans {
-  width: calc(100%/3) -20px;
-  max-width: 300px;
+  width: calc(100%/3);
+  max-width: 600px;
   margin-bottom: 20px;
-  border-radius: 12px;
+  border-radius: 34px;
+  margin-top: 32px;
   text-align: center;
-  border-top: solid #414346 6px;
+  margin-right: 20px;
+
 }
 
 .pricing__plans__section-1 {
   display: flex;
   flex-direction: column;
-  line-height: 1.625;
-  border: solid #414346 2px;
+  line-height: 2;
+  padding: 24px 0;
   
 }
 
 .pricing__plans__section-2 {
   display: flex;
   flex-direction: column;
-  line-height: 1.625;
-  border: solid #414346 2px;
+  line-height: 3;
+  border-top: solid #b8babe 4px;
+  border-bottom: solid #b8babe 4px;
+  padding: 24px;
 }
 
 .pricing__plans__section-3 {
-
-  border: solid #414346 2px;
+  padding: 64px 0;
 
 }
 
@@ -456,25 +462,73 @@ padding: 24px 24px;
 .monthly__subtitle {
   font-size: 28px;
   font-weight: bold;
-  color: #505255;
+  color: #140f0fc2;
 }
 
 .persons__subtitle {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
-  color: #2d2e30;
+  color: #140f0fc2;
 }
 
 .descriptions__subtitle {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
-  color: #505255;
+  color: #140f0fc2;
 }
 
 .buy--now--personal__btn {
-  padding: 24px 36px;
-  font-size: 32px;
+  padding: 24px 96px;
+  font-size: 24px;
+  font-weight: bold;
   color: #ffffffcb;
-  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
   border-radius: 56px;
+  background: linear-gradient(115deg, #41dac0, #40e9a8);
+}
+
+.buy--now--business__btn {
+  padding: 24px 96px;
+  font-size: 24px;
+  color: #6415FF;
+  font-weight: bold;
+  border-radius: 56px;
+}
+
+.buy--now--enterprise__btn {
+  padding: 24px 96px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffffcb;
+  background: linear-gradient(to right, rgb(245, 101, 101), rgb(254, 178, 178));
+  border-radius: 56px;
+  
+}
+
+
+.personal--plan__container {
+  border-top: solid 16px;
+  border-image: linear-gradient(to left, #51d4a9, #e7eee7);
+  border-image-slice: 1;
+  background-clip:padding-box;
+  border-left: solid 2px #747880,;
+}
+
+.business--plan__container {
+  background: linear-gradient( 115deg, rgb(60, 49, 212) 0%, rgb(87, 133, 194) 100%);
+  border-radius: 24px;
+}
+
+.enterprise--plan__container {
+  border-top: solid 16px;
+  border-image: linear-gradient(to right, #ec6b80, #f0d2d2);
+  border-image-slice: 1;
+  background-clip:padding-box;
+}
+
+.business__subtitle,
+.business--price__subtitle,
+.business--monthly__subtitle,
+.busniess--descriptions__subtitle,
+.business--persons__subtitle {
+  color: white;
 }
