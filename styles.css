@@ -432,8 +432,7 @@ padding: 24px 24px;
   flex-direction: column;
   line-height: 2;
   padding: 24px 0;
-  border-left: solid 3px #b8babe;
-  border-right: solid 3px #b8babe;
+
   
 }
 
@@ -441,15 +440,13 @@ padding: 24px 24px;
   display: flex;
   flex-direction: column;
   line-height: 3;
-  border-top: solid #b8babe 4px;
-  border-left: solid #b8babe 4px;
-  border-right: solid #b8babe 4px;
+  border-top: solid #b8babe33 4px;
+  border-bottom: solid #b8babe49 4px;
   padding: 24px;
 }
 
 .pricing__plans__section-3 {
   padding: 64px 0;
-  border: solid #b8babe 3px;
 }
 
 .personal__subtitle {
@@ -486,7 +483,7 @@ padding: 24px 24px;
   font-weight: bold;
   color: #ffffffcb;
   border-radius: 56px;
-  background: linear-gradient(115deg, #41dac0, #40e9a8);
+  background: linear-gradient(to left, #51d4a9, #80e7c8);
 }
 
 .buy--now--business__btn {
@@ -507,27 +504,53 @@ padding: 24px 24px;
   
 }
 
+.personal--plan__bar {
+  background: linear-gradient(to left, #51d4a9, #e7eee7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
 
 .personal--plan__container {
-  border-top: solid 16px;
+  position: relative;
+  border: solid #b8babe1c 3px;
+  border-radius: 18px;
+  /*border-top: solid 16px;
   border-image: linear-gradient(to left, #51d4a9, #e7eee7);
   border-image-slice: 1;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
   background-clip:padding-box;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;*/
 
 }
 
 .business--plan__container {
   background: linear-gradient( 115deg, rgb(60, 49, 212) 0%, rgb(87, 133, 194) 100%);
   border-radius: 24px;
+  border: solid #b8babe 1px;
 }
 
+.enterprise--plan__bar {
+  background: linear-gradient(to right, rgb(245, 101, 101), rgb(254, 178, 178));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+
 .enterprise--plan__container {
-  border-top: solid 16px;
-  border-image: linear-gradient(to right, #ec6b80, #f0d2d2);
-  border-image-slice: 1;
-  background-clip:padding-box;
+  position: relative;
+  border: solid #b8babe1c 3px;
+  border-radius: 18px;
 }
 
 .business__subtitle,
