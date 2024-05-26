@@ -443,3 +443,38 @@ padding: 24px 24px;
 
 }
 
+.personal__subtitle {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.price__subtitle {
+  font-size: 86px;
+  font-weight: bold;
+}
+
+.monthly__subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #505255;
+}
+
+.persons__subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d2e30;
+}
+
+.descriptions__subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #505255;
+}
+
+.buy--now--personal__btn {
+  padding: 24px 36px;
+  font-size: 32px;
+  color: #ffffffcb;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  border-radius: 56px;
+}
