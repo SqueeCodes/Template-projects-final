@@ -47,6 +47,16 @@ ul {
   list-style: none;
 }
 
+h3 {
+  font-size: 24px;
+  color: #2d2e30;
+}
+
+h4 {
+  font-size: 24px;
+  color: #505255;
+}
+
 .purple {
   color: #6415FF;
 }
@@ -559,4 +569,134 @@ padding: 24px 24px;
 .busniess--descriptions__subtitle,
 .business--persons__subtitle {
   color: white;
+}
+
+
+/*TESTIMONIALS*/
+
+
+.testimonials__container {
+  display: flex;
+  padding: 196px 96px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 2400px;
+}
+
+.clients__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  line-height: 2;
+  padding: 0 126px;
+}
+
+.heats__img__wrapper {
+  width: 50%;
+}
+
+
+.client__testimonials {
+  font-size: 76px;
+  font-weight: 900;
+}
+
+.testimonials__description {
+  padding: 32px 0;
+
+}
+
+.testimonial__statement {
+  color: #253853;
+  font-size: 28px;
+  padding: 36px 0 0 0;
+}
+
+.adam__img {
+  width: 126px;
+  border-radius: 72px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+
+}
+
+.client__id {
+  width: 50%;
+  margin-left: 36px;
+
+}
+
+.client__btns {
+  width: 50%;
+  margin-left: 196px;
+}
+
+.arrow__btn {
+  cursor: not-allowed;
+  width: 84px;
+  padding: 24px 24px;
+  border-radius: 240px;
+  background-color: #e2e4eb;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  font-size: 32px;
+}
+
+.fa-star {
+  font-size: 32px;
+}
+
+.testimonials__purple {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/*FAQS*/
+
+.faqs__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 4;
+}
+
+.question {
+  background-color: #e5e7eba2;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+
+.question__subtitle {
+  font-size: 32px;
+  color: #303133;
+  margin-left: 5%;
+  font-weight: 600;
+  position: relative;
+}
+
+.dropdown__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.671);
+  position: relative;
+  cursor: not-allowed;
+}
+
+.faqs-title__description {
+  width: calc(100%/3);
+  padding: 24px 0;
+  font-size: 32px;
+}
+
+.faqs--title {
+  font-size: 84px;
 }
