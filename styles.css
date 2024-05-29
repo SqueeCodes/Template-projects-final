@@ -181,6 +181,10 @@ h1 {
   border-radius: 56px;
 }
 
+.btn:hover {
+  background-color: #270961;
+  transition: all 400ms ease; 
+}
 
 .btn {
   font-weight: bold;
@@ -189,8 +193,8 @@ h1 {
   color: white;
   background-color: #6415FF;
   border-radius: 48px;
-  border: solid ;
 }
+
 .get-started__email {
   color: #ffffffc2;
   font-weight: bold;
@@ -730,6 +734,7 @@ padding: 24px 24px;
   font-size: 48px;
 }
 
+
 .get--started-2__btn {
   width: 243px;
   height: 96px;
@@ -740,6 +745,11 @@ padding: 24px 24px;
   background: linear-gradient(to right, rgb(243, 58, 58), rgb(207, 69, 69));
   border-radius: 56px;
   margin-right: 48px;
+}
+
+.get--started-2__btn:hover {
+  background-color: black;
+  transition: all 400ms ease;
 }
 
 .contact--us-2__btn {
