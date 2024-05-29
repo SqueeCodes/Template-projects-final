@@ -762,7 +762,7 @@ padding: 24px 24px;
 
 .footer__container {
   background-color: #6415FF;
-  border-bottom: solid #747880 2px;
+  border-bottom: solid #b0b5be62 3px;
 }
 
 .footer__row {
@@ -777,4 +777,83 @@ padding: 24px 24px;
 .footer__column__subtitle {
   font-weight: 700;
   margin-bottom: 24px;
+}
+
+/*LEGAL*/
+
+.legal__container {
+  background-color: #6415FF;
+}
+
+.legal__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 243px;
+  margin-left: 163px;
+  margin-right: 163px;
+  padding-bottom: 12px;
+
+}
+
+.company__logo {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.legal__company__logo--wrapper {
+  background-color: white;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+}
+
+.legal__company__logo {
+  height: 60px;
+  width: 100%;
+}
+
+.treact--inc__title {
+  font-size: 36px;
+  font-weight: 700;
+  padding-left: 24px;
+}
+
+.copyright {
+  font-size: 22px;
+  color: #b8babe;
+  font-weight: 600;
+  margin-right: 96px;
+}
+
+.fa-facebook-f {
+  font-size: 24px;
+  background-color: white;
+  border-radius: 50%;
+  color: #395680;
+  padding: 20px 24px;
+  margin-right: 24px;
+}
+
+.fa-twitter {
+  font-size: 24px;
+  background-color: white;
+  border-radius: 50%;
+  color: #395680;
+  padding: 22px 22px;
+  margin-right: 24px;
+}
+
+.fa-youtube {
+  font-size: 24px;
+  background-color: white;
+  border-radius: 50%;
+  color: #395680;
+  padding: 22px 22px;
+  margin-right: 24px;
 }
