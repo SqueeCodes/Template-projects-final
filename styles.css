@@ -28,10 +28,11 @@ button {
 p {
   font-size: 24px;
   color: #747880;
-  font-weight: bold;
+  font-weight: 300;
   position: relative;
   margin: 0 auto;
 }
+
 .padding__container {
   padding: 96px 0;
 
@@ -77,6 +78,10 @@ nav {
   display: flex;
   align-items: center;
   position: absolute;
+}
+
+.Logos {
+  width: 80%;
 }
 
 .logo__img {
@@ -161,7 +166,7 @@ h1 {
 .p1 {
   color: #505255;
   line-height: 1.5;
-  font-size: 26px;
+  font-size: 20px;
   margin-bottom: 36px;
   margin-top: 36px;
 }
@@ -191,8 +196,8 @@ h1 {
 
 .btn {
   font-weight: bold;
-  font-size: 24px;
-  padding: 24px 48px;
+  font-size: 16px;
+  padding: 14px 24px;
   color: white;
   background-color: #6415FF;
   border-radius: 48px;
@@ -202,7 +207,7 @@ h1 {
   color: #ffffffc2;
   font-weight: bold;
   border: none;
-  font-size: 24px;
+  font-size: 16px;
   margin-left: 24px;
 
 }
@@ -222,15 +227,19 @@ h1 {
 }
 
 .header__section {
-  width: 60%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
 
-.header__img--wrapper {
+.landing__img--wrapper {
+  margin-left: 36px;
+  width: 55%;
+
+}
+
+.landing__img {
   width: 100%;
-  max-width: 1200px;
-  margin-top: 56px;
 }
 
 .head__img {
@@ -240,7 +249,7 @@ h1 {
 /*features*/
 
 .features__container {
-  padding: 96px 0;
+  padding: 72px 0;
   margin: 0 64px;
 }
 
@@ -252,6 +261,7 @@ h1 {
 }
 
 .title__description {
+  font-size: 24px;
   width: calc(100%/3);
   padding: 24px 0;
 
@@ -275,24 +285,24 @@ padding: 24px 24px;
 }
 
 .subtitle {
-  font-size: 38px;
+  font-size: 24px;
   color: #2d2e30;
   margin-left: 28px;
 }
 
 .description {
+  font-size: 18px;
   margin-left: 28px;
 }
 
 .service__img {
-  width: 56px;
-  padding: 8px;
+  width: 36px;
 }
 
 .service__img--wrapper {
-  border: 1px solid #747880;
-  border-radius: 100%;
-  padding: 12px 12px;
+  border: 2px solid #7478806c;
+  border-radius: 100px;
+  padding: 8px 10px;
 }
 
 
@@ -365,7 +375,7 @@ padding: 24px 24px;
 }
 
 .info__subtitle {
-  font-size: 68px;
+  font-size: 36px;
 }
 
 
