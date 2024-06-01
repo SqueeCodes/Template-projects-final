@@ -1216,11 +1216,19 @@ padding: 24px 24px;
 .fa-brands__wrapper {
   display: flex;
 }
-.fa-brands {
+.fa-youtube {
   font-size: 18px;
   padding: 12px 12px;
 }
-.
+.fa-twitter {
+  font-size: 18px;
+  padding: 12px 12px;
+}
+.fa-facebook-f {
+  font-size: 18px;
+  padding: 12px 16px;
+}
+.cop
 
 
 }
