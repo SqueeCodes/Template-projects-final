@@ -1228,7 +1228,9 @@ padding: 24px 24px;
   font-size: 18px;
   padding: 12px 16px;
 }
-.cop
+.copyright--stuff {
+ text-align: center;
+}
 
 
 }
