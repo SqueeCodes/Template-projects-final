@@ -168,6 +168,7 @@ h1 {
   color: #505255;
   line-height: 1.5;
   font-size: 20px;
+  font-weight: 400;
   margin-bottom: 36px;
   margin-top: 36px;
 }
@@ -265,6 +266,7 @@ h1 {
 
 .title__description {
   font-size: 24px;
+  font-weight: 400;
   width: calc(100%/3);
   padding: 24px 0;
 
@@ -295,6 +297,7 @@ padding: 24px 24px;
 
 .description {
   font-size: 18px;
+  font-weight: 400;
   margin-left: 28px;
 }
 
@@ -327,8 +330,20 @@ padding: 24px 24px;
 
 /*STEPS TO START*/
 
+.steps__row {
+  width: 100%;
+  max-width: 2400px;
+}
+
 .steps__img--wrapper {
   width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.steps__img {
+  width: 100%;
+  max-width: 636px;
 }
 
 .steps__section {
@@ -339,7 +354,8 @@ padding: 24px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 200px;
+  width: 50%;
+  margin-left: 24px;
 }
 
 
@@ -375,7 +391,7 @@ padding: 24px 24px;
 
 .list__para {
   color: #71757a;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .info__subtitle {
@@ -409,10 +425,12 @@ padding: 24px 24px;
   line-height: 1.5;
 }
 
+.values__para2,
 .values__para {
+  text-align: left;
   font-size: 18px;
   color: #71757a;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .values__items {
@@ -460,7 +478,7 @@ padding: 24px 24px;
 .pricing__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .pricing__plans {
@@ -781,10 +799,12 @@ padding: 24px 24px;
 }
 
 .subfooter__row {
-  padding: 96px 0;
-  width: 78%;
+  padding: 72px 0;
+  width: 100%;
   border-radius: 12px;
   background-color: #6415FF;
+  display: flex;
+  justify-content: space-between;
 }
 
 .description__wrapper {
@@ -792,26 +812,30 @@ padding: 24px 24px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 42px 196px;
+  padding: 42px 56px;
 
 }
 
 .subfooter__description {
   color: white;
   font-size: 48px;
+  font-weight: 400;
 }
 
+.btns__wrapper {
+  display: flex;
+  
+}
 
 .get--started-2__btn {
-  width: 243px;
-  height: 96px;
-  padding: 18px 48px;
+  width: 186px;
+  height: 72px;
   font-size: 24px;
   font-weight: bold;
   color: white;
   background: linear-gradient(to right, rgb(243, 58, 58), rgb(207, 69, 69));
   border-radius: 56px;
-  margin-right: 48px;
+  margin-right: 24px;
 }
 
 .get--started-2__btn:hover {
@@ -820,16 +844,15 @@ padding: 24px 24px;
 }
 
 .contact--us-2__btn {
-  width: 243px;
-  height: 94px;
-  padding: 17px 48px;
+  width: 186px;
+  height: 72px;
   font-size: 24px;
   font-weight: bold;
   color: white;
   border-radius: 56px;
   border: solid whitesmoke 1px;
   background-color: #6415FF;
-  margin-right: 48px;
+  margin-right: 24px;
 }
 
 /*FOOTER*/
@@ -849,8 +872,13 @@ padding: 24px 24px;
 }
 
 .footer__column__subtitle {
-  font-weight: 700;
-  margin-bottom: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer__column__list--item {
+  font-size: 16px;
 }
 
 /*LEGAL*/
@@ -863,11 +891,10 @@ padding: 24px 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: white;
   height: 243px;
-  margin-left: 163px;
-  margin-right: 163px;
+
   padding-bottom: 12px;
 
 }
@@ -885,11 +912,14 @@ padding: 24px 24px;
   align-items: center;
   position: relative;
   border-radius: 4px;
+  margin-left: 24px;
+
 }
 
 .legal__company__logo {
   height: 60px;
   width: 100%;
+  position: relative;
 }
 
 .treact--inc__title {
@@ -902,7 +932,6 @@ padding: 24px 24px;
   font-size: 22px;
   color: #b8babe;
   font-weight: 600;
-  margin-right: 96px;
 }
 
 .fa-facebook-f {
@@ -940,6 +969,10 @@ padding: 24px 24px;
     max-width: 728px;
     display: flex;
     flex-direction: column;
+  }
+
+  .p2 {
+    margin: 36px 0;
   }
 
   .header__sections {
@@ -981,7 +1014,7 @@ padding: 24px 24px;
     text-align: left;
   }
   .landing__img {
-    width: 524px;
+    width: 100%;
   }
   /*FEATURES MEDIA*/
   .title {
@@ -990,6 +1023,7 @@ padding: 24px 24px;
   .title__description {
     font-size: 14px;
     text-align: center;
+    font-weight: 400;
     margin: 0 1px;
   }
   /*SERVICES MEDIA*/
@@ -1025,7 +1059,7 @@ padding: 24px 24px;
     align-items: center;
   }
   .body__img {
-    width: 524px;
+    width: 100%;
     
   }
   .info__title {
@@ -1052,7 +1086,7 @@ padding: 24px 24px;
     justify-content: center;
   }
   .steps__img {
-    width: 524px;
+    width: 100%;
     margin-bottom: 36px;
   }
   .info__subtitle {
@@ -1089,7 +1123,7 @@ padding: 24px 24px;
     font-size: 16px;
   }
   .values__img {
-    width: 524px;
+    width: 100%;
   }
 
   /*PRICING*/
@@ -1148,7 +1182,7 @@ padding: 24px 24px;
     width: 50vh;
   }
   .hearts__img {
-    width: 524px;
+    width: 100%;
   }
   .testimonials__purple {
     font-size: 20px;
@@ -1158,6 +1192,7 @@ padding: 24px 24px;
     width: 150%;
     max-width: 524px;
     font-size: 16px;
+    font-weight: 400;
     padding: 12px 0;
     margin-bottom: 24px;
   }
