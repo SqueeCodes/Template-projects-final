@@ -74,6 +74,10 @@ nav {
   align-items: center;
 }
 
+.hamburger__wrapper {
+  display: none;
+}
+
 .logo__img--wrapper {
   max-width: 40%;
   display: flex;
@@ -975,158 +979,217 @@ padding: 24px 24px;
     margin: 36px 0;
   }
 
+  .hamburger__wrapper {
+    display: contents;   
+  }
+
+  .hamburger__menu {
+
+  }
+
+  .fa-bars {
+   font-size: 32px;
+   color: #6415FF;
+  }
+
+  .nav__link-anchor,
+  .sign-up__anchor {
+    display: none;
+  }
+
   .header__sections {
     flex-direction: column;
     text-align: center;
   }
+
   h1 {
     font-size: 24px;
   }
+
   .p1 {
     font-size: 14px;
     margin-top: 12px;
   }
+
   .get-started {
     max-width: 440px;
     max-height: 64px;
-    
   }
+
   .get-started__email{
-    font-size: 18px;
+    font-size: 12px;
     margin-left: 12px;
-    position: relative;
   }
+
   .btn {
     width: 126px;
     height: 42px;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
   }
+
   .partners__logos {
     display: flex;
     flex-direction: column;
   }
+
   .p2 {
     font-size: 12px;
     text-align: left;
   }
+
   .landing__img {
     width: 100%;
   }
+
+
   /*FEATURES MEDIA*/
+
+
   .title {
     font-size: 24px;
   }
+
   .title__description {
     font-size: 14px;
     text-align: center;
     font-weight: 400;
     margin: 0 1px;
   }
+
+
   /*SERVICES MEDIA*/
+
+
   .services__row {
     display: flex;
     flex-wrap: wrap;
   }
+
   .service__wrapper {
     width: 50%;
   }
+
   .subtitle {
     font-size: 24px;
   }
+
   .description {
     font-size: 14px;
   }
+
   .service__img {
     width: 42px;
   position: relative;
   }
+
   .service__img--wrapper {
   padding: 0 3px;
   border-radius: 56px;
   }
+
   .work__container {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .work__img--wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .body__img {
     width: 100%;
-    
   }
+
   .info__title {
     font-size: 16px;
   }
+
   .working__subtitle {
     font-size: 36px;
     width: 100vh;
     max-width: 450px;
   }
+
   .work__section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .steps__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .steps__img--wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .steps__img {
     width: 100%;
     margin-bottom: 36px;
   }
+
   .info__subtitle {
     font-size: 36px;
     margin-bottom: 12px ;
   }
+  
   .list__number {
     font-size: 32px;
   }
+
   .list {
     margin-top: 18px;
   }
+
   .list__items {
     font-size: 18px;
     margin-bottom: 4px;
   }
+
   .list__para {
     font-size: 14px;
     max-width: 240px;
   }
+
   .padding__container {
     padding: 24px 0;
   }
 
+
   /*values media*/
+
 
   .values__items {
     font-size: 24px;
   }
+
   .values__para {
     font-size: 16px;
   }
+
   .values__para2 {
     font-size: 16px;
   }
+
   .values__img {
     width: 100%;
   }
 
+
   /*PRICING*/
+
 
   .pricing__container {
     flex-wrap: wrap;
@@ -1134,6 +1197,7 @@ padding: 24px 24px;
     margin-right: 40%;
     align-items: center;
   }
+
   .personal--plan__container,
   .business--plan__container,
   .enterprise--plan__container {
@@ -1141,21 +1205,27 @@ padding: 24px 24px;
     height: 90vh;
     margin: 0 auto;
   }
+
   .personal__subtitle {
     font-size: 32px;
   }
+
   .price__subtitle {
     font-size: 36px;
   }
+
   .monthly__subtitle {
     font-size: 20px;
   }
+
   .persons__subtitle {
     font-size: 24px;
   }
+
   .descriptions__subtitle {
     font-size: 18px;
   }
+
   .buy--now--personal__btn,
   .buy--now--business__btn,
   .buy--now--enterprise__btn {
@@ -1164,11 +1234,14 @@ padding: 24px 24px;
     font-size: 24px;
     padding: 0 0;
   }
+
   .pricing {
     padding: 48px 12px;
   }
 
+
   /*TESTIMONIALS MEDIA*/
+
 
   .testimonials__container,
   .clients__container {
@@ -1178,16 +1251,20 @@ padding: 24px 24px;
     justify-content: center;
     line-height: 1.5;
   }
+
   .client__testimonials {
     width: 50vh;
   }
+
   .hearts__img {
     width: 100%;
   }
+
   .testimonials__purple {
     font-size: 20px;
     margin-top: 36px;
   }
+
   .testimonials__description {
     width: 150%;
     max-width: 524px;
@@ -1196,36 +1273,43 @@ padding: 24px 24px;
     padding: 12px 0;
     margin-bottom: 24px;
   }
+
   .testimonial__statement {
     font-size: 18px;
     padding: 0;
     width: 50vh;
   }
+
   .fa-star {
     font-size: 14px;
   }
+
   .adam__img {
     width: 56px;
   }
+
   h3 {
     font-size: 18px;
   }
+
   h4 {
     font-size: 12px;
   }
+
   .client {
     width: 60vw;
-
   }
+
   .client__id {
     display: flex;
     flex-direction: column;
-
   }
+
   .fa-arrow-left,
   .fa-arrow-right {
     font-size: 16px;
   }
+
   .arrow__btn {
     width: 2.5vh;
     height: 2.5vh;
@@ -1234,38 +1318,47 @@ padding: 24px 24px;
     justify-content: center;
     margin-left: 12px;
   }
+
   .client__btns {
     display: flex;
     margin-left: 56px;
     
   }
 
+
 /*FAQS MEDIA*/
+
 
   .faqs-title__description {
     font-size: 18px;
   }
+
   .faqs__row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .question {
     display: flex;
     justify-content: space-between;
     width: 75vh;
     height: 7.5vh;
   }
+
   .question__subtitle {
     font-size: 16px;
   }
+
   .fa-caret-down {
     font-size: 18px;
     margin-right: 24px;
   }
 
+
 /*SUBFOOTER MEDIA*/
+
 
   .subfooter__row {
     display: flex;
@@ -1273,10 +1366,12 @@ padding: 24px 24px;
     width: 75vh;
     height: 25vh;
   }
+
   .subfooter__description {
     font-size: 24px;
     width: 50%;
   }
+
   .get--started-2__btn {
     width: 15vh;
     height: 5.5vh;
@@ -1286,11 +1381,13 @@ padding: 24px 24px;
     align-items: center;
     padding: 17px 36px;
   }
+
   .contact--us-2__btn {
     padding: 0 0;
     margin-right: 4px;
     margin-top: 12px;
   }
+
 
 /*FOOTER MEDIA*/
 
@@ -1302,17 +1399,22 @@ padding: 24px 24px;
     justify-content: space-between;
     padding: 12px 12px;
   }
+
   .footer__column__subtitle {
     font-size: 12px;
   }
+
   .footer__container {
     width: 100%;
   }
+
   .footer__column__list--item {
     font-size: 10px;
   }
 
+
 /*LEGAL MEDIA*/
+
 
   .legal__row {
     display: flex;
@@ -1321,34 +1423,42 @@ padding: 24px 24px;
     justify-content: space-around;
     padding: 24px 0;
   }
+
   .treact--inc__title {
     font-size: 24px;
     padding: 0 6px;
   }
+
   .copyright {
     font-size: 16px;
   }
+
   .fa-brands__wrapper {
     display: flex;
   }
+
   .fa-youtube {
     font-size: 18px;
     padding: 12px 12px;
   }
+
   .fa-twitter {
     font-size: 18px;
     padding: 12px 12px;
   }
+
   .fa-facebook-f {
     font-size: 18px;
     padding: 12px 16px;
   }
+
   .copyright--stuff {
    text-align: center;
   }
+
   .legal__company__logo {
     width: 5vh;
     height: 5vh;
   }
-
+  
 }
