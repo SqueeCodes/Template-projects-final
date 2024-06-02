@@ -13,11 +13,11 @@ html {
 
 body {
   max-width: 2400px;
-  margin: 0 156px;
+  margin: 0 0px;
 }
 .row {
   width: 100%;
-  max-width: 1600px;
+  max-width: 2400px;
   margin: 0 auto;
   padding-top: 28px;
 }
@@ -74,6 +74,12 @@ nav {
   align-items: center;
 }
 
+.nav__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .hamburger__wrapper {
   display: none;
 }
@@ -94,6 +100,11 @@ nav {
   width: 100%;
 }
 
+.logo__img:hover {
+  transition: all 400ms ease;
+  color: #270961;
+}
+
 a {
   color: #395680;
   font-size:20px;
@@ -109,14 +120,14 @@ a {
 }
 
 .treact__link:hover {
+  transition: all 400 ease;
   color: #6415FF;
 }
 
 .nav__links {
+  width: 50%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin: 0 auto;
 }
 
 .link__hover-effect:after {
@@ -418,6 +429,10 @@ padding: 24px 24px;
   display: flex;
   flex-direction: row;
   padding-bottom: 42px;
+}
+
+.work__img--wrapper {
+  width: 50%;
 }
 
 .values__img {
@@ -975,16 +990,32 @@ padding: 24px 24px;
     flex-direction: column;
   }
 
+  .logo__img {
+    width: 42px;
+  }
+
+  .treact__link {
+    font-size: 24px;
+  }
+
   .p2 {
     margin: 36px 0;
   }
 
   .hamburger__wrapper {
     display: contents;   
+
   }
 
   .hamburger__menu {
+    background-color: rgba(255, 255, 255, 0);
 
+  }
+
+  .fa-bars:hover {
+    transition: all 400ms ease;
+    color: #270961;
+    
   }
 
   .fa-bars {
@@ -1127,6 +1158,7 @@ padding: 24px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .steps__img--wrapper {
@@ -1181,6 +1213,11 @@ padding: 24px 24px;
 
   .values__para2 {
     font-size: 16px;
+  }
+
+  .work__img--wrapper {
+    width: 75%;
+    margin-top: 36px;
   }
 
   .values__img {
@@ -1249,6 +1286,7 @@ padding: 24px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: left;
     line-height: 1.5;
   }
 
@@ -1272,6 +1310,8 @@ padding: 24px 24px;
     font-weight: 400;
     padding: 12px 0;
     margin-bottom: 24px;
+    margin: 0 0;
+
   }
 
   .testimonial__statement {
@@ -1372,6 +1412,7 @@ padding: 24px 24px;
     width: 50%;
   }
 
+
   .get--started-2__btn {
     width: 15vh;
     height: 5.5vh;
@@ -1383,9 +1424,14 @@ padding: 24px 24px;
   }
 
   .contact--us-2__btn {
-    padding: 0 0;
-    margin-right: 4px;
-    margin-top: 12px;
+
+    width: 15vh;
+    height: 5.5vh;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 36px;
   }
 
 
