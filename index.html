@@ -24,7 +24,7 @@
   <meta name="twitter:title" content="Free Modern React Templates and Components for Building Landing Pages">
   <meta name="twitter:description" content="Easily customizable modern React UI Templates and Components built using TailwindCSS which are also lightweight and simple to setup. All components are modular and fully responsive for great mobile experience as well as big desktop screens.  Brand Colors are also fully customizable. ">
   <meta name="twitter:image" content="https://treact.owaiskhan.me/react-landing-pages-and-components-free-tailwindcss-twitter.png">
-  <script defer="defer" src="/static/js/main.8b5ace48.js"></script>
+  <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/350c2510e1.js" crossorigin="anonymous"></script>
   <style data-styled="active" data-styled-version="5.3.5"></style>
 </head>
@@ -46,10 +46,38 @@
               <a href="#signup"  class="sign-up__btn">Sign Up</a>
             </button>
           </div>
-          <div class="hamburger__wrapper">
-            <button class="hamburger__menu">
-              <i class="fa-solid fa-bars"></i>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
             </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a class="menu__link" href="#" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" href="#features" onclick="closeMenu()">Blog</a>
+                </li>
+                <li class="menu__list">
+                  <a class="no-cursor menu__link" onclick="closeMenu()" href="#">Pricing</a>
+                </li>
+                <li class="menu__list">
+                  <a class="no-cursor menu__link" onclick="closeMenu()" href="#">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                  <a class="no-cursor menu__link" onclick="closeMenu()" href="#">Login</a>
+                </li>
+                <li class="menu__list">
+                  <a class="no-cursor menu__link" onclick="closeMenu()" href="#">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
