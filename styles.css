@@ -79,7 +79,7 @@ h4 {
   font-size: 40px;
   text-align: center;
   border: none;
-  display: none;
+  display: block;
 }
 
 .menu__backdrop {
