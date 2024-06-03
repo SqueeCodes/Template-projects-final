@@ -117,10 +117,11 @@ h4 {
 
 }
 
+
 .btn__menu--close {
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: 2px;
+  top: 2px;
   padding: 8px;
   color: white;
 }
@@ -1097,7 +1098,7 @@ padding: 24px 24px;
   }
 
   .btn__menu {
-    display: contents;   
+    display: block;   
 
   }
 
