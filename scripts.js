@@ -28,3 +28,22 @@ function openMenu() {
           observer.observe(section);
         });
       });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const arrowButtons = document.querySelectorAll('.arrow__btn');
+        const charlotteStatement = document.querySelector('.testimonial__item');
+      
+        arrowButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Remove the slide-in class to reset the animation
+            charlotteStatement.classList.remove('slide-in');
+            
+            // Trigger reflow to restart the animation
+            void charlotteStatement.offsetWidth;
+            
+            // Add the slide-in class to trigger the animation
+            charlotteStatement.classList.add('slide-in');
+          });
+        });
+      });
+      

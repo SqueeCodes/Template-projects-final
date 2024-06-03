@@ -802,6 +802,33 @@ padding: 24px 24px;
   padding: 36px 0 0 0;
 }
 
+.charlotte__statement {
+  display: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.charlotte__statement {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.charlotte__statement.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+
+
 .adam__img {
   width: 96px;
   border-radius: 72px;
@@ -825,7 +852,7 @@ padding: 24px 24px;
 }
 
 .arrow__btn {
-  cursor: not-allowed;
+  cursor: pointer;
   width: 56px;
   padding: 16px 4px;
   margin-left: 12px;
