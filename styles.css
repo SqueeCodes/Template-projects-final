@@ -1136,37 +1136,38 @@ padding: 24px 24px;
   border-radius: 56px;
   }
 
-  .work__container {
+  /*QUALITY WORK*/
+
+    
+   .work__container {
     display: flex;
     flex-direction: column-reverse;
-  }
+   }
 
-  .work__img--wrapper{
+   .work__img--wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+   }
 
-  .body__img {
+   .body__img {
     width: 100%;
-  }
+   }
 
-  .info__title {
-    font-size: 16px;
-  }
+   .info__title {
+     font-size: 16px;
+   }
 
-  .working__subtitle {
-    font-size: 36px;
-    width: 100vh;
-    max-width: 450px;
-  }
+   .working__subtitle {
+     font-size: 24px;
+   }
 
-  .work__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+   .work__section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
 
   .steps__section {
     display: flex;
@@ -1521,4 +1522,201 @@ padding: 24px 24px;
     height: 5vh;
   }
   
+}
+
+@media (max-width: 1080px) {
+
+  .working__subtitle {
+    font-size: 32px;
+  }
+
+  .pricing__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 40%;
+    align-items: center;
+  }
+
+  .personal--plan__container,
+  .business--plan__container,
+  .enterprise--plan__container {
+    width: 50vh;
+    height: 90vh;
+    margin: 0 auto;
+  }
+
+  .personal__subtitle {
+    font-size: 32px;
+  }
+
+  .price__subtitle {
+    font-size: 36px;
+  }
+
+  .monthly__subtitle {
+    font-size: 20px;
+  }
+
+  .persons__subtitle {
+    font-size: 24px;
+  }
+
+  .descriptions__subtitle {
+    font-size: 18px;
+  }
+
+  .buy--now--personal__btn,
+  .buy--now--business__btn,
+  .buy--now--enterprise__btn {
+    width: 35vh;
+    height: 10vh;
+    font-size: 24px;
+    padding: 0 0;
+  }
+
+  .pricing {
+    padding: 48px 12px;
+  }
+
+  .description__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12px;
+  }
+
+  .footer__column__subtitle {
+    font-size: 12px;
+  }
+
+  .footer__container {
+    width: 100%;
+  }
+
+  .footer__column__list--item {
+    font-size: 10px;
+  }
+
+  .subfooter__row {
+    display: flex;
+    justify-content: center;
+    width: 75vh;
+    height: 25vh;
+  }
+
+  .subfooter__description {
+    font-size: 24px;
+    width: 50%;
+  }
+
+
+  .get--started-2__btn {
+    width: 15vh;
+    height: 5.5vh;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 36px;
+  }
+
+  .contact--us-2__btn {
+
+    width: 15vh;
+    height: 5.5vh;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 36px;
+  }
+
+  .testimonials__row,
+  .clients__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    line-height: 1.5;
+  }
+
+  .client__testimonials {
+    width: 50vh;
+  }
+
+  .hearts__img {
+    width: 100%;
+  }
+
+  .testimonials__purple {
+    font-size: 20px;
+    margin-top: 36px;
+  }
+
+  .testimonials__description {
+    width: 150%;
+    max-width: 524px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 0;
+    margin-bottom: 24px;
+    margin: 0 0;
+
+  }
+
+  .testimonial__statement {
+    font-size: 18px;
+    padding: 0;
+    width: 50vh;
+  }
+
+  .fa-star {
+    font-size: 14px;
+  }
+
+  .adam__img {
+    width: 56px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .client {
+    width: 60vw;
+  }
+
+  .client__id {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fa-arrow-left,
+  .fa-arrow-right {
+    font-size: 16px;
+  }
+
+  .arrow__btn {
+    width: 2.5vh;
+    height: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+  }
+
+  .client__btns {
+    display: flex;
+    margin-left: 56px;
+    
+  }
+
+
+
 }
