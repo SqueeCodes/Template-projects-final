@@ -30,48 +30,32 @@
 </head>
 <body>
   <section id="navigation">
-    <nav>
-        <div class="row nav__row">
-          <ul>
-            <li>
-              <figure class="logo__img--wrapper">
-                <img class="logo__img" src="./assets/logo.svg" alt="">
-                <a class="treact__link" rel="stylesheet" href="https://treact.owaiskhan.me/">Treact</a>
-              </figure>
-            </li>
-            <div class="nav__links">
-              <li class="nav__link">
-                <a class="nav__link-anchor link__hover-effect link__hover-effect--black" href="https://treact.owaiskhan.me/#">About</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__link-anchor link__hover-effect link__hover-effect--black" href="https://treact.owaiskhan.me/#">Blog</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__link-anchor link__hover-effect link__hover-effect--black" href="#">Pricing</a>
-              </li class="nav__link">
-              <li class="nav__link">
-                <a class="nav__link-anchor link__hover-effect link__hover-effect--black" href="#">Contact Us</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__link-anchor link__hover-effect link__hover-effect--black" href="#">Login</a>
-              </li>
-              <li>
-                <a class="sign-up__anchor" href="#">Sign Up</a>
-              </li>
-              <div class="hamburger__wrapper">
-                <button class="hamburger__menu">
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-              </div>
-            </div>
-          </ul>
-        </div> 
-      </nav>
+      <div class="nav__container">
+        <div class="nav__row">
+          <div class="logo__img--wrapper">
+            <img src="/assets/logo.svg" alt="Logo" class="logo__img">
+            <a href="/" class="treact__link">Treact</a>
+          </div>
+          <div class="nav__links">
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#login">Login</a>
+            <button class="sign-up__btn--wrapper">
+              <a href="#signup"  class="sign-up__btn">Sign Up</a>
+            </button>
+          </div>
+          <div class="hamburger__wrapper">
+            <button class="hamburger__menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
   </section>
   <section id="header">
-    
     <div class="padding__container header_container">
-
       <div class="row header__row">
         <div class="header__sections">
           <div class="header__section">
@@ -325,8 +309,6 @@
        </div>
        <div class="pricing__plans">
         <div class="business--plan__container">
-          <div class="business--plan__bar">
-          </div>
           <div class="pricing__plans__section-1">
             <span class="personal__subtitle business__subtitle">BUSINESS</span>
             <span class="price__subtitle business--price__subtitle">$37.99</span>
@@ -369,6 +351,7 @@
   </section>
   <section id="testimonials">
     <div class="testimonials__container">
+    <div class="testimonials__row">
       <div class="hearts__img__wrapper">
         <figure>
           <img class="hearts__img" src="./assets/hearts connected.svg" alt="">
@@ -396,6 +379,8 @@
         </div>
       </div>
     </div>
+  </div>
+
   </section>
   <section id="FAQS-title">   
     <div class="padding__container">
