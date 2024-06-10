@@ -1840,6 +1840,21 @@ padding: 24px 24px;
     
   }
 
+}
 
+@media (max-width: 500px) {
 
+  .services__row {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .service__wrapper {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .get-started {
+    display: none;
+  }
 }
