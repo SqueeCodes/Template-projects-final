@@ -1,5 +1,5 @@
 * {
-  font-family: 'inter', sans-serif;
+  font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,17 +8,18 @@
 html {
   scroll-behavior: smooth;
   line-height: 1.5;
+  text-size-adjust: 100%;
 
 }
 
 body {
+  padding: 32px;
   max-width: 2400px;
   margin: 0 0px;
 }
 .row {
   width: 100%;
   max-width: 2400px;
-  margin: 0 2%;
   padding-top: 28px;
   display: flex;
   flex-direction: column;
@@ -209,7 +210,9 @@ h4 {
   align-items: center;
 }
 
-
+.sign-up__btn--wrapper {
+  background-color: white;
+}
 
 .sign-up__btn {
   background-color: #6415FF;
@@ -273,12 +276,12 @@ h4 {
 }
 
 .header__row {
+  max-width: 1280px;
   margin: 0 2%;
 }
 
 h1 {
   color: #2d2e30;
-  font-size: 64px;
 }
 
 .p1 {
@@ -340,8 +343,9 @@ h1 {
 }
 
 .header__sections {
-  max-width: 1600px;
+  max-width: 1280px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -529,13 +533,15 @@ padding: 24px 24px;
 
 .values__container {
   display: flex;
-  flex-direction: row;
-  padding-bottom: 42px;
+  flex-direction: column;
 }
 
 .work__img--wrapper {
   width: 50%;
+  margin-left: 48px;
 }
+
+
 
 .values__img {
   width: 100%;
@@ -603,8 +609,7 @@ padding: 24px 24px;
 }
 
 .pricing__plans {
-  width: calc(100%/3);
-  max-width: 420px;
+  max-width: 380px;
   margin-bottom: 20px;
   border-radius: 34px;
   margin-top: 32px;
@@ -700,20 +705,34 @@ padding: 24px 24px;
   border-top-right-radius: 24px;
 }
 
-
+.personal--plan__container,
+.business--plan__container,
+.enterprise--plan__container {
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  max-width: 24rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(26 32 44 / var(--tw-text-opacity));
+  --tw-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 
 
 .personal--plan__container {
   position: relative;
   border: solid #b8babe1c 3px;
   border-radius: 18px;
-  /*border-top: solid 16px;
-  border-image: linear-gradient(to left, #51d4a9, #e7eee7);
-  border-image-slice: 1;
-  background-clip:padding-box;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;*/
-
 }
 
 .business--plan__container {
@@ -785,10 +804,7 @@ padding: 24px 24px;
 }
 
 
-.client__testimonials {
-  font-size: 56px;
-  font-weight: 900;
-}
+
 
 .testimonials__description {
   padding: 18px 0;
@@ -940,7 +956,6 @@ padding: 24px 24px;
 
 .subfooter__row {
   padding: 72px 0;
-  width: 75%;
   border-radius: 12px;
   background-color: #6415FF;
   display: flex;
@@ -958,8 +973,8 @@ padding: 24px 24px;
 
 .subfooter__description {
   color: white;
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 1.675rem;
+  font-weight: 700;
 }
 
 .btns__wrapper {
@@ -968,14 +983,14 @@ padding: 24px 24px;
 }
 
 .get--started-2__btn {
-  width: 186px;
-  height: 72px;
-  font-size: 24px;
+  padding: 20px 40px;
+  position: relative;
+  font-size: 16px;
   font-weight: bold;
   color: white;
   background: linear-gradient(to right, rgb(243, 58, 58), rgb(207, 69, 69));
   border-radius: 56px;
-  margin-right: 24px;
+  margin-right: 32px;
 }
 
 .get--started-2__btn:hover {
@@ -984,9 +999,9 @@ padding: 24px 24px;
 }
 
 .contact--us-2__btn {
-  width: 186px;
-  height: 72px;
-  font-size: 24px;
+  padding: 20px 40px;
+  position: relative;
+  font-size: 16px;
   font-weight: bold;
   color: white;
   border-radius: 56px;
@@ -1106,9 +1121,10 @@ padding: 24px 24px;
 @media (max-width: 728px) {
   body {
     margin: 12px;
-    max-width: 728px;
+    max-width: 546px;
     display: flex;
     flex-direction: column;
+    padding: 32px;
   }
 
   .logo__img {
@@ -1154,6 +1170,7 @@ padding: 24px 24px;
     text-align: center;
   }
 
+
   h1 {
     font-size: 24px;
   }
@@ -1164,24 +1181,31 @@ padding: 24px 24px;
   }
 
   .get-started {
-    max-width: 440px;
-    max-height: 64px;
+    width: 112%;
+    padding: 12px;
   }
 
   .get-started__email{
     font-size: 12px;
-    margin-left: 12px;
+    margin-left: 2px;
+    position: relative;
+
   }
 
-  .btn {
-    width: 126px;
-    height: 42px;
-    font-size: 12px;
+  .get-started__btn {
+    width: 72px;
+    height: 32px;
+    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    position: absolute;
+    bottom: -72px;
+    left: 350px;
+
   }
+
+
 
   .partners__logos {
     display: flex;
@@ -1207,6 +1231,7 @@ padding: 24px 24px;
 
   .title__description {
     font-size: 14px;
+    width: 100%;
     text-align: center;
     font-weight: 400;
     margin: 0 1px;
@@ -1295,7 +1320,7 @@ padding: 24px 24px;
   }
 
   .info__subtitle {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 12px ;
   }
   
@@ -1326,7 +1351,7 @@ padding: 24px 24px;
 
 
   .values__items {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .values__para {
@@ -1349,32 +1374,32 @@ padding: 24px 24px;
 
   /*PRICING*/
 
+  .pricing__plans__section-1,
+  .pricing__plans__section-2,
+  .pricing__plans__section-3 {
+    max-width: 326px;
+  }
 
   .pricing__container {
     flex-wrap: wrap;
     flex-direction: column;
-    margin-right: 40%;
     align-items: center;
+    width: 100%;
+    max-width: 326px;
   }
 
-  .personal--plan__container,
-  .business--plan__container,
-  .enterprise--plan__container {
-    width: 50vh;
-    height: 90vh;
-    margin: 0 auto;
-  }
+
 
   .personal__subtitle {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .price__subtitle {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .monthly__subtitle {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .persons__subtitle {
@@ -1526,51 +1551,35 @@ padding: 24px 24px;
 /*SUBFOOTER MEDIA*/
 
 
-  .subfooter__row {
-    display: flex;
-    justify-content: center;
-    width: 75vh;
-    height: 25vh;
-  }
+.description__wrapper {
+  flex-wrap: wrap;
+}
 
-  .subfooter__description {
-    font-size: 24px;
-    width: 50%;
-  }
+.subfooter__row {
+  padding: 36px;
+}
 
+.subfooter__description {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+}
 
-  .get--started-2__btn {
-    width: 15vh;
-    height: 5.5vh;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 36px;
-  }
+.btns__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 24px;
+}
 
-  .contact--us-2__btn {
-
-    width: 15vh;
-    height: 5.5vh;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 36px;
-  }
-
+.get--started-2__btn {
+  margin-bottom: 12px;
+  padding: 12px 12px;
+}
 
 /*FOOTER MEDIA*/
 
   
-  .description__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 12px;
-  }
 
   .footer__column__subtitle {
     font-size: 12px;
@@ -1635,7 +1644,7 @@ padding: 24px 24px;
   
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1020px) {
 
   .working__subtitle {
     font-size: 32px;
@@ -1644,36 +1653,34 @@ padding: 24px 24px;
   .pricing__container {
     flex-wrap: wrap;
     flex-direction: column;
-    margin-right: 40%;
     align-items: center;
+    width: 100%;
+    max-width: 524px;
   }
 
-  .personal--plan__container,
-  .business--plan__container,
-  .enterprise--plan__container {
-    width: 50vh;
-    height: 90vh;
-    margin: 0 auto;
+
+  .title__description {
+    width: 100%;
   }
 
   .personal__subtitle {
-    font-size: 32px;
-  }
-
-  .price__subtitle {
-    font-size: 36px;
-  }
-
-  .monthly__subtitle {
     font-size: 20px;
   }
 
-  .persons__subtitle {
+  .price__subtitle {
     font-size: 24px;
   }
 
+  .monthly__subtitle {
+    font-size: 16px;
+  }
+
+  .persons__subtitle {
+    font-size: 20px;
+  }
+
   .descriptions__subtitle {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .buy--now--personal__btn,
@@ -1712,19 +1719,16 @@ padding: 24px 24px;
   .subfooter__row {
     display: flex;
     justify-content: center;
-    width: 75vh;
-    height: 25vh;
+
   }
 
   .subfooter__description {
     font-size: 24px;
-    width: 50%;
   }
 
 
   .get--started-2__btn {
-    width: 15vh;
-    height: 5.5vh;
+
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -1733,9 +1737,6 @@ padding: 24px 24px;
   }
 
   .contact--us-2__btn {
-
-    width: 15vh;
-    height: 5.5vh;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
