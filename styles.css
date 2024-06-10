@@ -554,6 +554,7 @@ padding: 24px 24px;
 
 .values__para2,
 .values__para {
+  width: 100%;
   text-align: left;
   font-size: 18px;
   color: #71757a;
@@ -1166,9 +1167,13 @@ padding: 24px 24px;
   }
 
   .header__sections {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    max-width: 524px;
   }
+
+
 
 
   h1 {
@@ -1242,12 +1247,13 @@ padding: 24px 24px;
 
 
   .services__row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,3fr);
   }
 
   .service__wrapper {
     width: 50%;
+    padding: 4px;
   }
 
   .subtitle {
@@ -1299,6 +1305,7 @@ padding: 24px 24px;
      display: flex;
      flex-direction: column;
      align-items: center;
+     width: 100%;
    }
 
   .steps__section {
@@ -1306,6 +1313,10 @@ padding: 24px 24px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .steps__container {
+    width: 100%;
   }
 
   .steps__img--wrapper {
@@ -1475,12 +1486,18 @@ padding: 24px 24px;
     width: 56px;
   }
 
+ 
+
   h3 {
     font-size: 18px;
   }
 
   h4 {
     font-size: 12px;
+  }
+
+  p1 {
+    width: 100%;
   }
 
   .client {
@@ -1644,7 +1661,7 @@ padding: 24px 24px;
   
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1080px) {
 
   .working__subtitle {
     font-size: 32px;
